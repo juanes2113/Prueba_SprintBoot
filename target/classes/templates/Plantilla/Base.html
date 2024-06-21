@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/Estilo.css}">
+</head>
+
+<body>
+
+    <nav th:fragment="nav" class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/Index}">
+                <img src="https://www.gratistodo.com/wp-content/uploads/2016/12/Pato-Donald-2.jpg" width="40" height="40" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav menu" data-animation="to-left">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: red;" id="Aux">
+                            Clientes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="nav-link active" aria-current="page" th:href="@{/listar}" id="Aux2">Clientes</a>
+                            <a class="nav-link active" aria-current="page" th:href="@{/form}" id="Aux2">Registrar clientes</a>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: red;" id="Aux">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="nav-link active" aria-current="page" th:href="@{/listProducts}" id="Aux2">Productos</a>
+                            <a class="nav-link active" aria-current="page" th:href="@{/createProduct}" id="Aux2">Crea Productos</a>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: red;" id="Aux">
+                            Usuarios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="nav-link active" aria-current="page" th:href="@{/list_users}" id="Aux2">Usuarios</a>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: red;" id="Aux">
+                            Venta
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="nav-link active" aria-current="page" th:href="@{/Vender}" id="Aux2">Proceso de venta</a>
+                            <a class="nav-link active" aria-current="page" th:href="@{/Venta}" id="Aux2">Listado de ventas</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit" style="border-color:red;">Buscar</button>
+            </form>
+            <form th:action="@{/logout}" class="d-flex" role="search">
+                <button class="btn btn-outline-danger" type="submit" style="border-color:red; margin-left: 8px;">Cerrar Sesión</button>
+            </form>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" type=""></script>
+</body>
+
+</html>
