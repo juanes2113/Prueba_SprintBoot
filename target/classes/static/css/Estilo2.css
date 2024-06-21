@@ -1,0 +1,58 @@
+#Aux1
+{
+  background-image: url("/Imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -120px;
+}
+
+#Aux2
+{
+  width: 600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  background-color: black;
+  opacity: 0.7;
+  margin-top: 130px;
+}
+
+#Aux3
+{
+  color: white;
+  opacity: none;
+}
+
+#Aux4
+{
+  color: white;
+  opacity: none;
+  padding-left: 80px;
+}
+
+#Aux5
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#Aux6
+{
+  color: white;
+}
+
+#Aux6:hover
+{
+  background-color: white;
+  color: black;
+}
+
+#Aux8
+{
+  width: 150px;
+  margin-top: -100px;
+  box-shadow: 0px 0px 3px #848484;
+  border-radius: 50%;
+  margin-left: 170px;
+}

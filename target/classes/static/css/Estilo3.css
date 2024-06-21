@@ -1,0 +1,48 @@
+#Aux1
+{
+  background-image: url("/Imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -120px;
+}
+
+#Aux2
+{
+  width: 700px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  background-color: black;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+
+#Aux3
+{
+  color: white;
+  opacity: none;
+}
+
+#Aux4
+{
+  color: white;
+  opacity: none;
+}
+
+#Aux5
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#Aux6
+{
+  color: white;
+}
+
+#Aux6:hover
+{
+  background-color: white;
+  color: black;
+}
